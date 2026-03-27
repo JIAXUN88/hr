@@ -1,0 +1,5 @@
+{
+  "name": "HR Tool: Lucky Draw & Grouping",
+  "description": "A professional tool for HRs to perform lucky draws and auto-grouping from CSV or pasted name lists.",
+  "requestFramePermissions": []
+}
