@@ -25,7 +25,7 @@ View your app in AI Studio: https://ai.studio/apps/7bcb17a3-7db6-4366-a454-ba33d
    ```bash
    npm run dev
    ```
-   
+
 ## Automatic Deployment (GitHub Pages)
 
 This project has been configured with GitHub Actions to automatically deploy to **GitHub Pages** whenever you push to the `main` or `master` branch.
