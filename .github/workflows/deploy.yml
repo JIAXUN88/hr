@@ -28,26 +28,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # 如果沒有提交 package-lock.json 到 git，保留 cache 會有找不到路徑的錯誤
-          # 這裡先移除 cache 避免路徑解析失敗
           
       - name: Install dependencies
-        run: |
-          cd frontend
-          npm install
-          
+        working-directory: frontend
+        run: npm install
+        
       - name: Build
-        run: |
-          cd frontend
-          npm run build
-          
+        working-directory: frontend
+        run: npm run build
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'frontend/dist'
+          path: frontend/dist
           
       - name: Deploy to GitHub Pages
         id: deployment
